@@ -1,10 +1,10 @@
 import React from "react";
 import styles from './Login.module.css';
 import { Route, Routes } from "react-router-dom";
-import LoginForm from "./components/LoginForm/LoginForm";
-import LoginCreate from "./components/LoginCreate/LoginCreate";
-import LoginPasswordLost from "./components/LoginPasswordLost/LoginPasswordLost";
-import LoginPasswordReset from "./components/LoginPasswordReset/LoginPasswordReset";
+import LoginForm from "./Components/LoginForm/LoginForm";
+import LoginCreate from "./Components/LoginCreate/LoginCreate";
+import LoginPasswordLost from "./Components/LoginPasswordLost/LoginPasswordLost";
+import LoginPasswordReset from "./Components/LoginPasswordReset/LoginPasswordReset";
 
 const Login = () => {
     return <div>
