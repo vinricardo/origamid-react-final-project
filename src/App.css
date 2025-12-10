@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 ;
+    padding-top: 4rem;
+    color: #333;
+    --principal-type: Helvetica, Arial, sans-serif;
+    --secondary-type: 'Spectral', Georgia;
+    font-family: var(--principal-type);
+}
+
+h1, h2, h3, h4, p {
+    margin: 0rem;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button, input {
+    display: block;
+    font-size: 1rem;
+    font-family: var(--principal-type);
+    color: #333;
+}
+
+.container {
+    max-width: 50rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
