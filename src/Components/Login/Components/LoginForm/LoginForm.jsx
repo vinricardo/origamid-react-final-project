@@ -1,9 +1,10 @@
 import React from "react";
 import Input from "../../../Shared/Forms/Components/Input/Input";
 import Button from "../../../Shared/Forms/Components/Button/Button";
+import useForm from "../../../../Hooks/useForm";
 
 const LoginForm = () => {
-    const [username, setUsername] = React.useState('');
+    const username = useForm()
     const [password, setPassword] = React.useState('');
     
     function handleSubmit(event) {
@@ -26,7 +27,7 @@ const LoginForm = () => {
             <h1>Login</h1>
         </div>
         <form action="" onSubmit={handleSubmit}>
-            <Input label="Usuário" type="text" name="username"/>
+            <Input label="Usuário" type="text" name="username" {...username}/>
             <Input label="Senha" type="password" name="password"/>
             <Button>Entrar</Button>
         </form>
