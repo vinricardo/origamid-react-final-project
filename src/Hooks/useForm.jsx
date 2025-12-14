@@ -17,7 +17,7 @@ export const useForm = (type) => {
         if(value.length === 0) {
             setError('Preencha um valor.')
             return false;
-        } else if(validations.email && !validations.email.regex.test(value)) {
+        } else if(validations[type] && !validations[type].regex.test(value)) {
             setError(validations[type].message)
             return false
         } else {
