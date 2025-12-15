@@ -11,6 +11,15 @@ export const TOKEN = {
             body: JSON.stringify(body)
         }
     }),
+    VALIDATE: (token) => ({
+        url: API_URL.concat('/jwt-auth/v1/token/validate'),
+        options: {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer '.concat(token)
+            }
+        }
+    }),
 }
 
 export const USER = {
