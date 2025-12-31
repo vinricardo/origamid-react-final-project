@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +10,7 @@ body {
     padding-top: 4rem;
     color: #333;
     --principal-type: Helvetica, Arial, sans-serif;
-    --secondary-type: 'Spectral', Georgia;
+    --secondary-type: 'Spectral', georgia;
     font-family: var(--principal-type);
 }
 
@@ -40,8 +42,30 @@ button, input {
     margin: 0 auto;
 }
 
+.title {
+    font-family: var(--secondary-type);
+    line-height: 1;
+    font-size: 3rem;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+    &::after {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: #FB1;
+        position: absolute;
+        bottom: .3125rem;
+        left: -0.3125rem;
+        border-radius: .2rem;
+        z-index: -1;
+    }
+}
+
 a {
     text-decoration: none;
+    color: #333;
 }
 
 .animeLeft {
