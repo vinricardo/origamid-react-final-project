@@ -33,7 +33,7 @@ const LoginForm = () => {
         <div className={styles.register}>
             <h2 className={styles.subtitle}>Cadastre-se</h2>
             <p>Ainda não possui conta?Cadastre-se no site.</p>
-            <Link className={stylesBtn.button} to="/login/criar">Cadastro</Link>
+            <Link className={stylesBtn.button} to="/login/create">Cadastro</Link>
         </div>
     </section>)
 }
