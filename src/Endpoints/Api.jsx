@@ -32,4 +32,14 @@ export const USER = {
             }
         }
     }),
+    POST: (body) => ({
+        url: API_URL.concat('/api/user'),
+        options: {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body)
+        }
+    })
 }

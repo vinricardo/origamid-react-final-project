@@ -2,7 +2,7 @@ import React from "react";
 
 const validations = {
     email: {
-        regex: /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i,
+        regex: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
         message: 'Preencha um email válido'
     },
     password: {
